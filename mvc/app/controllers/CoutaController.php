@@ -19,16 +19,20 @@ class CoutaController{
         return "Hola desde la vista!!!!!";
     }
 
-    public function enviarP(){
+    public function datos(){
         $capital = $_POST['capital'];
         $interes = $_POST['i'];
         $plazos = $_POST['plazos'];
 
+
+        $couta = ($capital * (($interes*(1+$interes)**$plazos))/(1+$interes)**$plazos-1);
         return $this->views("ResultadoView", [
             "capital" => $capital,
-            "i" => $interes,
-            "plazos" => $plazos
+            "interes" => $interes,
+            "plazos" => $plazos,
+            "Couta" => $couta
         ]);
     }
+
 }
 ?>

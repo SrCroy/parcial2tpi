@@ -9,5 +9,6 @@
     <?= $capital?>
     <?= $interes?>
     <?= $plazos?>
+    <?= $coutas?>
 </body>
 </html>

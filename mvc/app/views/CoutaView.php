@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Fomralrio de cuolta mensual</h1>
-    <form action="enviar" method="POST">
+    <form action="jl" method="POST">
         <label for="">El capital: </label>
         <input type="text" name="capital" id="">
         <br>
